@@ -1,0 +1,142 @@
+
+body{
+	background-color: grey;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	min-width: 600px;
+}
+
+p {
+	font-family: arial;
+}
+
+header{
+	/*
+	 This would be necessary if I wanted the footer to be
+	 the same width as the body (not longer on the right side)
+	min-width: inherit;
+	max-width: inherit;
+	*/
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	float: left;
+	font-family: arial;
+	background-color: black;
+	padding: 0px;
+	margin: 0px;
+	color: grey;
+	top: 0px;
+
+	/*prevent padding from changing size of element*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+header ul{
+	list-style: none;
+	list-style-image: none;
+	display:inline;
+}
+
+header ul li{
+	float: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	
+}
+
+#logo, .header-link{
+	color: grey;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 0px 10px;
+}
+
+/*Change color of link when being clicked */
+#logo:active, .header-link:active {
+	color: rgba(255,255,255,.4);
+}
+
+footer{
+	/*
+	 This would be necessary if I wanted the footer to be
+	 the same width as the body (not longer on the right side)
+	min-width: inherit;
+	max-width: inherit;
+	*/
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	float: left;
+	font-family: arial;
+	background-color: black;
+	padding: 5px 0px 0px 5px;
+	margin: 0px;
+	color: grey;
+	bottom: 0px;
+	text-align: center; 
+
+	/*prevent padding from changing size of element*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+.header-link{
+	color: grey;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 0px 10px;
+}
+
+#header{
+	color: grey;
+	top:0px;
+}
+
+#wrapper{
+	padding-top: 55px;
+	padding-bottom: 55px;
+	display: table;
+	width: 100%;
+ }
+ 
+ #left, #right, #main {
+	 display: table-cell;
+	 padding-left: 8px;	
+	 padding-top: 8px;
+	 padding-bottom: 8px;
+ }
+ 
+#left, #right {
+	width: 200px;
+}
+.project-div {
+	
+	background-color: rgba(255,255,255,.1);
+}
+#main {
+	border-style: outset;
+	border-width: 1px;
+	border-color: grey;
+	
+	background: rgba(255,255,255,.2);
+	
+	/* border radius */
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nathan Ahrens</title>
+
+    {% load static %}
+    <!-- Load site-wide CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'temperature/style/standard.css' %}">
+    <!-- Load page-specific CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'temperature/style/index.css' %}">
+
+    <link rel='icon' type='image/ico' href="{% static 'temperature/favicon.ico' %}">
+
+    <style type="text/css">
+      h1 a{
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+      {% include 'temperature/header.html' %}
+    </header>
+    <div id="wrapper">
+
+      <section id="left" class="project-div">
+      <h1><a href="projects">Projects</a></h1>
+      <div class="projects">
+      <a class="project" href="projects/aliens" target="_top">Alien Report</a><br>
+      <a class="project" href="projects/CS275" target="_top">CS275</a>
+      <h1>GitHub</h1>
+      <a class="project" href="https://brennankunkel.github.io/crafty/" target="_top">Alya Kemi</a><br>
+      <a class="project" href="https://github.com/redninja2" target="_top">GitHub Account</a>
+
+      </div>
+      </section>
+
+      <section id="main">
+        <p>Major: Computer Science</p><br>
+        <p>Minor: Information System</p>
+        <h2>Bio:</h2>
+        <p>
+          I began my studies at Ashland University the fall semester of 2015.	Since then, I have
+          secured a position at the Ashland University Tech Support Center as a Tech Support Assistant (TSA).
+          Amongst my abilities are:
+          <ul>
+            <li>Programming</li>
+            <ul>
+              <li>Java</li>
+              <li>HTML5/CSS/PHP</li>
+              <li>Python</li>
+            </ul>
+
+            <li>Googling</li>
+            <li>Trouble Shooting</li>
+            <li>Debugging</li>
+          </ul>
+        </p>
+      </section>
+
+      <aside id="right">
+      </aside>
+
+    </div>
+
+    <footer>
+      <p>Total number of visitors: {{ visit_count }}</p>
+      {% include 'temperature/footer.html' %}
+    </footer>
+  </body>
+</html>
